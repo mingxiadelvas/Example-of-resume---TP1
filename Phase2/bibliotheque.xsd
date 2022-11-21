@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="auteurs.xsd"/>
+    <xs:include schemaLocation="livres.xsd"/>
+    <xs:simpleType name="valeurPrix">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="bibliotheque">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="livres"/>
+                <xs:element ref="auteurs"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

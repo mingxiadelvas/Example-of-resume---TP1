@@ -1,0 +1,10 @@
+start = element auteurs { auteur+ }
+auteur =
+    element auteur {
+        attribute nom { string },
+        attribute prenom { string },
+        element pays { text },
+        element commentaire { text }?,
+        element photo { text },
+        element ident { text }
+    }

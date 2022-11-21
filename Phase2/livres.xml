@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="livres.xsl"?>
+<!-- Devoir de Ming-Xia Delvas, matricule: 20104038 et Calin Popa, matricule: 20158726-->
+<!DOCTYPE livres SYSTEM "livres.dtd">
+<livres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="livres.xsd">
+    <livre langue="francais">
+        <ListeAuteurs>
+            <auteurs>
+                <auteur nom="Schwarzenegger" prenom="Arnold">
+                    <pays>Autriche</pays>
+                    <commentaire>Ce livre a vendu quatre copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-2</photo>
+                    <ident>arn</ident>
+                </auteur>
+                <auteur nom="Marley" prenom="Bob">
+                    <pays>Canada</pays>
+                    <commentaire>Ce livre a vendu deux copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-1</photo>
+                    <ident>bob</ident>
+                </auteur>
+            </auteurs>
+        </ListeAuteurs>
+        <titre>The Shore</titre>
+        <annee>1993</annee>
+   
+        <prix devise="US"><valeur>20</valeur></prix>
+        <commentaire>Tres bon livre</commentaire>
+        <couverture>https://en.wikipedia.org/wiki/The_Shore_(video_game)</couverture>
+    </livre>
+
+    <livre langue="anglais">
+        <ListeAuteurs>
+            <auteurs>
+                <auteur nom="Picart" prenom="Martin">
+                    <pays>France</pays>
+                    <commentaire>Ce livre a vendu dix copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-3</photo>
+                    <ident>mar</ident>
+                </auteur>
+            </auteurs>
+        </ListeAuteurs>
+        <titre>Lord of the Rings</titre>
+        <annee>1997</annee>
+        <prix devise="US"><valeur>19</valeur></prix>
+        <commentaire></commentaire>
+        <couverture>https://it.wikipedia.org/wiki/Il_Signore_degli_Anelli_-_La_Compagnia_dell%27Anello</couverture>
+    </livre>
+
+    <livre langue="roumain">
+        <ListeAuteurs>
+            <auteurs>
+                <auteur nom="Garcia" prenom="John">
+                    <pays>USA</pays>
+                    <commentaire>Ce livre a vendu sept copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-5</photo>
+                    <ident>joh</ident>
+                </auteur>
+            </auteurs>
+        </ListeAuteurs>
+        <titre>Harry Potter and the Sorcerer's Stone</titre>
+        <annee>1999</annee>
+        <prix devise="EURO">
+            <valeur>15</valeur>
+        </prix>
+        <commentaire>Caterogie sorcier</commentaire>
+        <couverture>https://en.wikipedia.org/wiki/Harry_Potter</couverture>
+    </livre>
+
+    <livre langue="anglais">
+        <ListeAuteurs>
+            <auteurs>
+                <auteur nom="Escobar" prenom="Pablo">
+                    <pays>Mexique</pays>
+                    <commentaire>Ce livre a vendu huit copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-4</photo>
+                    <ident>pab</ident>
+                </auteur>
+            </auteurs>
+        </ListeAuteurs>
+        <titre>And Then There Were None</titre>
+        <annee>2001</annee>
+        <prix devise="US"><valeur>27</valeur></prix>
+        <commentaire></commentaire>
+        <couverture>https://en.wikipedia.org/wiki/And_Then_There_Were_None</couverture>
+    </livre>
+
+    <livre langue="francais">
+        <ListeAuteurs>
+            <auteurs>
+                <auteur nom="Picart" prenom="Martin">
+                    <pays>France</pays>
+                    <commentaire>Ce livre a vendu dix copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-3</photo>
+                    <ident>mar</ident>
+                </auteur>
+                <auteur nom="Garcia" prenom="John">
+                    <pays>USA</pays>
+                    <commentaire>Ce livre a vendu sept copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-5</photo>
+                    <ident>joh</ident>
+                </auteur>
+            </auteurs>
+        </ListeAuteurs>
+        <titre>Alice's Adventures in Wonderland</titre>
+        <annee>2003</annee>
+        <prix devise="EURO">
+        <valeur>25</valeur></prix>
+        <commentaire>Moyennement aime</commentaire>
+        <couverture>https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland</couverture>
+    </livre>
+
+    <livre langue="anglais">
+        <ListeAuteurs>
+            <auteurs>
+                <auteur nom="Marley" prenom="Bob">
+                    <pays>Canada</pays>
+                    <commentaire>Ce livre a vendu deux copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-1</photo>
+                    <ident>bob</ident>
+                </auteur>
+            </auteurs>
+        </ListeAuteurs>
+        <titre>The Lion, the Witch, and the Wardrobe</titre>
+        <annee>2007</annee>
+        <prix devise="USD">
+            <valeur>29
+        </valeur>
+        </prix>
+        <commentaire></commentaire>
+        <couverture>https://en.wikipedia.org/wiki/The_Lion,_the_Witch_and_the_Wardrobe</couverture>
+    </livre>
+
+    <livre langue="roumain">
+        <ListeAuteurs>
+            <auteurs>
+                <auteur nom="Schwarzenegger" prenom="Arnold">
+                    <pays>Autriche</pays>
+                    <commentaire>Ce livre a vendu quatre copies</commentaire>
+                    <photo>https://images.unsplash.com/photo-2</photo>
+                    <ident>arn</ident>
+                </auteur>
+            </auteurs>
+        </ListeAuteurs>
+        <titre>Pinocchio</titre>
+        <annee>2009</annee>
+        <prix devise="EURO"><valeur>31</valeur></prix>
+        <commentaire>Bon livres pour les enfants</commentaire>
+        <couverture>https://en.wikipedia.org/wiki/Pinocchio_(1940_film)</couverture>
+    </livre>
+</livres>

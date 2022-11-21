@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT livres (livre+)>
+<!ATTLIST livres xmlns:xsi CDATA  #FIXED "http://www.w3.org/2001/XMLSchema-instance">
+<!ATTLIST livres xsi:noNamespaceSchemaLocation CDATA  #FIXED "livres.xsd">
+<!ELEMENT livre (ListeAuteurs,titre,annee,prix,commentaire,couverture)>
+<!ATTLIST livre langue CDATA #REQUIRED>
+<!ELEMENT ListeAuteurs (auteurs)>
+<!ELEMENT auteurs (auteur+)>
+<!ELEMENT auteur (pays,commentaire,photo,ident)>
+<!ATTLIST auteur nom CDATA #REQUIRED>
+<!ATTLIST auteur prenom CDATA #REQUIRED>
+<!ELEMENT pays (#PCDATA)>
+<!ELEMENT commentaire (#PCDATA)>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT ident (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT prix (#PCDATA)>
+<!ATTLIST prix devise CDATA #REQUIRED>
+<!ELEMENT couverture (#PCDATA)>

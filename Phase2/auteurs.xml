@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="livres.xsl"?>
+<!-- Devoir de Ming-Xia Delvas, matricule: 20104038 et Calin Popa, matricule: 20158726-->
+<!DOCTYPE auteurs SYSTEM "auteurs.dtd">
+<auteurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="auteurs.xsd">
+    <auteur nom="Marley" prenom="Bob">
+        <pays>Canada</pays>
+        <commentaire>Ce livre a vendu deux copies</commentaire>
+        <photo>https://images.unsplash.com/photo-1</photo>
+        <ident>bob</ident>
+    </auteur>
+    <auteur nom="Schwarzenegger" prenom="Arnold">
+        <pays>Autriche</pays>
+        <commentaire>Ce livre a vendu quatre copies</commentaire>
+        <photo>https://images.unsplash.com/photo-2</photo>
+        <ident>arn</ident>
+    </auteur>
+    <auteur nom="Picart" prenom="Martin">
+        <pays>France</pays>
+        <commentaire>Ce livre a vendu dix copies</commentaire>
+        <photo>https://images.unsplash.com/photo-3</photo>
+        <ident>mar</ident>
+    </auteur>
+    <auteur nom="Garcia" prenom="John">
+        <pays>USA</pays>
+        <commentaire>Ce livre a vendu sept copies</commentaire>
+        <photo>https://images.unsplash.com/photo-5</photo>
+        <ident>joh</ident>
+    </auteur>
+    <auteur nom="Escobar" prenom="Pablo">
+        <pays>Mexique</pays>
+        <commentaire>Ce livre a vendu huit copies</commentaire>
+        <photo>https://images.unsplash.com/photo-4</photo>
+        <ident>pab</ident>
+    </auteur>
+</auteurs>

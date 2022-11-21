@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Devoir de Ming-Xia Delvas, matricule: 20104038 et Calin Popa, matricule: 20158726-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="auteurs.xsd"/>
+    <xs:complexType name="auteurs">
+        <xs:sequence>
+            <xs:element ref="auteurs"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="livres">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="livre" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ListeAuteurs" type="auteurs"/>
+                            <xs:element name="titre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0"/>
+                                        <xs:maxLength value="60"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="annee" type="xs:int"/>
+
+                            <xs:element name="prix">
+
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="valeur">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:positiveInteger">
+                                                  <xs:maxInclusive value="100"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+                                    <xs:attribute name="devise" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="commentaire" type="xs:string" minOccurs="0"
+                                maxOccurs="1"/>
+                            <xs:element name="couverture" minOccurs="0" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:anyURI">
+                                        <xs:pattern value="https://.+"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="langue" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

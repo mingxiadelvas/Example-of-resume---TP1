@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Devoir de Ming-Xia Delvas, matricule: 20104038 et Calin Popa, matricule: 20158726-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="auteurs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="auteur" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pays" type="xs:string"/>
+                            <xs:element name="commentaire" type="xs:string" minOccurs="0"
+                                maxOccurs="1"/>
+                            <xs:element name="photo" type="xs:anyURI"/>
+                            <xs:element name="ident">
+                                <xs:unique name="uniquIdent">
+                                    <xs:selector xpath="ident"/>
+                                    <xs:field xpath="@ident"/>
+                                </xs:unique>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="nom" type="xs:string"/>
+                        <xs:attribute name="prenom" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
