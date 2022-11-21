@@ -1,0 +1,109 @@
+/* Devoir de Ming-Xia Delvas, matricule: 20104038 et Calin Popa, matricule: */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: white;
+    line-height: 22px;
+    font-size: 13px;
+    color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(206, 15, 15, 0.644);
+}
+
+.coordonnees {
+    font-size: 12px;
+    padding-left: 1%;
+}
+
+.coordonnees h1 {
+    font-weight: 700;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.coordonnees h3 {
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.profil {
+    width: 200px;
+    clip-path: circle(40%);
+}
+
+h2 {
+    color: rgba(206, 15, 15, 0.644);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+b {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.formation a {
+    font-size: 16px;
+}
+
+​ .formation li {
+    margin-left: 16px;
+}
+
+.formation {
+    margin-left: 15px;
+}
+
+.formation ul {
+    list-style: none;
+}
+
+dt {
+    font-weight: 600;
+}
+
+dd{
+    margin-left: 15px;
+}
+
+.experiences {
+    margin-left: 15px;
+}
+
+.experiences ol {
+    list-style: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 18%;
+    text-align: center;
+}
+
+.interets {
+    margin-left: 15px;
+    list-style-type: square;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(206, 15, 15, 0.644);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
